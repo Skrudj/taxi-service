@@ -54,10 +54,10 @@ public class Car {
     @Override
     public String toString() {
         return "Car{"
-                + "id=" + id
+                + "id=" + id + '\''
                 + ", model='" + model + '\''
-                + ", manufacturer=" + manufacturer
-                + ", drivers=" + drivers
+                + ", manufacturer=" + manufacturer + '\''
+                + ", drivers=" + drivers + '\''
                 + '}';
     }
 
@@ -79,4 +79,6 @@ public class Car {
     public int hashCode() {
         return Objects.hash(id, model, manufacturer, drivers);
     }
+
+
 }
